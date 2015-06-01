@@ -7,7 +7,7 @@ require_once('version.php');
 require_once('lib-core.php');
 if (isset($_SESSION['role']) && $_SESSION['role'] == "adm") {
     echo "
-    <h1>About Polr</h1>
+    <h1>About Lynk</h1>
     <br>
     <dl>Build Information
         <dt>Version: $version
@@ -17,7 +17,8 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == "adm") {
 }
 
 ?>
-<br><p><?php echo $wsn;?> is powered by Polr, an open source, minimalist link shortening platform. Learn more at <a href='https://github.com/Cydrobolt/polr'>its Github page</a> or its <a href="//project.polr.me">project site</a>.
+<br><p>Lynk is one of the hundreds of URL shortening services that you've probably used before. We're focused on maintaining and improving a secure URL shortening service that is elegant, easy to use, and provides detailed statistics for zeroing in on how to better serve your audience.</p><br>
+<p><?php echo $wsn;?> is a fork of Polr, an open source, minimalist link shortening platform. Check out <a href='https://github.com/Cydrobolt/polr'>its Github page</a> or its <a href="//project.polr.me">project site</a>.
     <br>Polr is licensed under the GNU GPL License.</p>
 <div style="font-size: 70%; padding-top: 40px">
     The GNU General Public License v3
