@@ -3,11 +3,11 @@
 require_once 'layout-headermd.php';
 require_once('version.php');
 ?>
+<h1>About Lynk</h1>
 <?php
 require_once('lib-core.php');
 if (isset($_SESSION['role']) && $_SESSION['role'] == "adm") {
     echo "
-    <h1>About Lynk</h1>
     <br>
     <dl>Build Information
         <dt>Version: $version

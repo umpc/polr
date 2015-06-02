@@ -111,7 +111,7 @@ if (!is_array($auth->islogged())) {
     $linkshtml .= paginate_table($links_page, $links_total_pages, "lpage", "links");
 
 
-    echo "<h3>Polr Dashboard</h3><br>";
+    echo "<h3>Lynk Dashboard</h3><br>";
     echo '<ul class="nav nav-tabs" id="tabsb">
             <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
             <li><a href="#links" data-toggle="tab">My links</a></li>
@@ -229,7 +229,7 @@ if (!is_array($auth->islogged())) {
 
     echo '</ul>';
     echo '<div class="tab-content">
-              <div class="tab-pane active" id="home"><br><h2>Welcome to '.$wsn.'\'s Polr dashboard.</div>
+              <div class="tab-pane active" id="home"><br><h2>Welcome to your dashboard.</div>
               <div class="tab-pane" id="links"><br>' . $linkshtml . '</div>
 
               '.$msges.'
@@ -244,7 +244,7 @@ if (!is_array($auth->islogged())) {
           </div>';
     if ($isadmin == true) {
         echo '<div class="tab-pane" id="adminpanel"><br />';
-        echo '<p>Polr Links:</p>' . $linksadmin . '<br><p>Polr Users</p>' . $usersadmin. '<script src="../js/ucp.js"></script>';
+        echo '<p>Lynks:</p>' . $linksadmin . '<br><p>Lynk Users</p>' . $usersadmin. '<script src="../js/ucp.js"></script>';
         echo '<p>Disable a Link</p>';
         echo '<input type="text" id="linkAction" placeholder="Link ending" style="width:30%;" class="form-control" />';
         echo '<div class="linkActionBtn"><a href="javascript:void()" onclick="customDisableLink();" class="btn btn-sm btn-danger">Disable</a>&nbsp;';
